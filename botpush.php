@@ -8,12 +8,12 @@ $access_token = 'k9W59oZ0c3/ZcgSZtJ9zmNT+0CfT+XCBVpYPMKZTKcE1NprF6CWjrFgK8LYVfks
 
 $channelSecret = 'f22f0820707f753a9a57f68064f04c4d';
 
-$pushID = 'Uf5cda2d0838064186a9a1b3d421d4f85';
+$pushID = 'U8a576cf8414fe3c5bc1872a51e8334ba';
 
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('Test');
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('Kuay Sharp');
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
